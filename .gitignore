@@ -1,0 +1,9 @@
+#*  
+.vscode/
+env/
+__pycache__/
+staticfiles/
+
+#TODO:
+.env
+db.sqlite3

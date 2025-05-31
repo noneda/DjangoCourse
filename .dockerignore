@@ -1,0 +1,7 @@
+.git
+.gitignone
+
+__pycache__/
+staticfiles/
+.env
+./env
