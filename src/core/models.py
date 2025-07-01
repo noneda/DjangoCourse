@@ -44,7 +44,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     """User in the System"""
 
     email = models.EmailField(max_length=254, unique=True)
-
     # * No need, Django does it automatically.
     # ! password = models.CharField(max_length=50)
 
