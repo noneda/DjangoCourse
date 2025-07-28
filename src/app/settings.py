@@ -75,6 +75,7 @@ WSGI_APPLICATION = "app.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
+# app/settings.py (or wherever your main settings file is located)
 
 DATABASES = {
     "default": {
@@ -82,11 +83,11 @@ DATABASES = {
         "NAME": "courses",
         "USER": "postgres",
         "PASSWORD": "postgres",
-        "HOST": "127.0.0.1",
+        # "HOST": "127.0.0.1", # <--- Localhost
+        "HOST": "host.docker.internal", # <--- Docker 
         "PORT": "5432",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators

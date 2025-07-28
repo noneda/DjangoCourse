@@ -1,10 +1,11 @@
 services:
+  # Django Application Service
   app:
     build:
       context: .
-    container_name: "DjangoCourse"
+    container_name: "django_course_app"
     ports:
       - "8000:8000"
     volumes:
-      - ./app:/app
-    command: sh -c "python manage.py runserver"
+      - ./src:/app
+    command: sh -c "python manage.py runserver 0.0.0.0:8000"
