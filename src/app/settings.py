@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "rest_framework.authtoken",
     "drf_spectacular",  # TODO: Make automatic a Docs for APIS
     "core",
     "user",
@@ -83,8 +84,8 @@ DATABASES = {
         "NAME": "courses",
         "USER": "postgres",
         "PASSWORD": "postgres",
-        # "HOST": "127.0.0.1", # <--- Localhost
-        "HOST": "host.docker.internal", # <--- Docker 
+        # "HOST": "127.0.0.1",  # <--- Localhost
+        "HOST": "host.docker.internal",  # <--- Docker
         "PORT": "5432",
     }
 }
